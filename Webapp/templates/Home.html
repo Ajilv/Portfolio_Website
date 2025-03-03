@@ -1,0 +1,393 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title>A V S</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="{% static 'assets/vendors/themify-icons/css/themify-icons.css' %}">
+    <!-- Bootstrap + Meyawo main styles -->
+    <link rel="stylesheet" href="{% static 'assets/css/meyawo.css' %}">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+<nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+    <div class="container">
+        <a class="logo" href="#">AVS</a>
+        <ul class="nav">
+            <li class="item">
+                <a class="link" href="#home">Home</a>
+            </li>
+            <li class="item">
+                <a class="link" href="#about">About</a>
+            </li>
+            <li class="item">
+                <a class="link" href="#skills">Skills</a>
+            </li>
+            <li class="item">
+                <a class="link" href="#resume">Resume</a>
+            </li>
+            <li class="item">
+                <a class="link" href="#contact">Contact</a>
+            </li>
+            <li class="item ml-md-3">
+                <a href="{% static 'assets/Files/Ajil_Resume2024.pdf' %}" class="btn btn-primary">Download CV</a>
+            </li>
+        </ul>
+        <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+            <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+            </div>
+        </a>
+    </div>
+</nav>
+
+
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">HI!</span>
+                <span class="down">I am Ajil V Sajith</span>
+            </h1>
+            <p class="header-subtitle">Python Developer | Jr. Game Developer | Full-Stack Enthusiast</p>
+
+            <a href="https://github.com/Ajilv"><button class="btn btn-primary">Visit My Works</button></a>
+        </div>
+    </header><!-- end of page header -->
+
+    <!-- about section -->
+{% block content %}
+    <section class="section pt-0" id="about">
+        <!-- container -->
+        <div class="container text-center" style="padding-top: 4rem;">
+            <!-- about wrapper -->
+            <div class="about">
+                <div class="about-img-holder">
+                    <img src="{% static 'assets/imgs/man.png' %}" class="about-img"
+                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+                <div class="about-caption">
+                    <p class="section-subtitle">Who Am I?</p>
+                    <h2 class="section-title mb-3">About Me</h2>
+                    <p>
+                        Hello! I'm Ajil V Sajith, a passionate developer with a strong foundation in programming and problem-solving. My journey in tech began with C++ and Java, laying the groundwork for my growth as a developer. Over the years, I’ve expanded my expertise to Python, Django, and web development.
+                    </p>
+                    <p>
+                        I hold an Advanced Diploma in Game Programming from Centennial College, where I honed my skills in C# and Unity, creating immersive gaming experiences. Recently, I’ve been shifting my focus towards full-stack development, aiming to build efficient and user-friendly web applications.
+                    </p>
+                    <p>
+                        A lover of mathematics and an avid learner, I’m always seeking challenges that allow me to craft innovative solutions. Currently, I’m pursuing a certification in Django to further strengthen my backend development skills.
+                    </p>
+                    <p>
+                        Beyond coding, I enjoy tinkering with new technologies, developing my portfolio website, and exploring creative ways to bring ideas to life. I’m eager to collaborate on exciting projects and make a meaningful impact in the tech world. Let’s build something amazing together!
+                    </p>
+                    <a href="assets/Files/Ajil_Resume2024.pdf">
+                    <button class="btn-rounded btn btn-outline-primary mt-4">Download CV</button></a>
+                </div>
+            </div><!-- end of about wrapper -->
+        </div><!-- end of container -->
+    </section> <!-- end of about section -->
+
+    <!-- service section -->
+    <section class="section" id="skills">
+        <div class="container text-center">
+            <p class="section-subtitle">What I Bring to the Table</p>
+            <h6 class="section-title mb-6">Skills</h6>
+            <!-- row -->
+            <div class="row mb-4">
+                <!-- First Row -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card ">
+                        <div class="body">
+                            <img src="{% static 'assets/imgs/design.png' %}"
+                                 alt=""
+                                 class="icon">
+                            <h6 class="title">Frontend Development</h6>
+                            <p class="subtitle">Building responsive and visually appealing interfaces using HTML, CSS, JavaScript, and React.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="{% static 'assets/imgs/python.png' %}"
+                                 alt="ProgrammingLanguages"
+                                 class="icon">
+                            <h6 class="title">Programming Languages</h6>
+                            <p class="subtitle">Proficient in Python, C++, C#, Java, and JavaScript. Strong foundation in programming principles and problem-solving.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="{% static 'assets/imgs/game-development.png' %}"
+                                 alt="Game"
+                                 class="icon">
+                            <h6 class="title">Game Development</h6>
+                            <p class="subtitle">Experience with Unity (C#) for creating 2D/3D games. Knowledge of asset management and blueprint systems in Unreal Engine.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Second Row -->
+            <div class="row">
+                <div class="col-md-6 col-lg-6">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="{% static 'assets/imgs/data-management.png' %}"
+                                 alt="Database"
+                                 class="icon">
+                            <h6 class="title">Database Management</h6>
+                            <p class="subtitle">Skilled in using MySQL and MongoDB for organizing and querying data effectively. Ensures efficient database designs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="{% static 'assets/imgs/solution.png' %}"
+                                 alt="Problem"
+                                 class="icon">
+                            <h6 class="title">Problem Solving</h6>
+                            <p class="subtitle">Leverage a deep love for mathematics and logical thinking to solve complex coding and algorithmic challenges.</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end of second row -->
+        </div>
+    </section><!-- end of skills section -->
+
+    <!-- end of service section -->
+<!-- Resume Section -->
+<section class="section" id="resume">
+    <div class="container text-center" style="box-shadow: 0px 0px 4px  rgb(218, 216, 216); padding: 1rem;">
+        <p class="section-subtitle">My Professional Journey</p>
+        <h6 class="section-title mb-6" style="text-decoration: underline;">Resume</h6>
+
+        <!-- Education Section -->
+        <h5 class="section-title mb-4">X---------- Education ----------X</h5>
+        <div class="row">
+            <div class="col-md-6 col-lg-6">
+                <div class="service-card">
+                    <div class="body">
+                        <img src="{% static 'assets/imgs/cenLogo.png' %}"
+                        alt=""
+                        class="icon">
+                        <h6 class="title">Advanced Diploma in Game Programming</h6>
+                        <p>Centennial College, Canada</p>
+                        <p class="unsubtitle">Graduated: 2023</p>
+                        <p class="subtitle">Focused on game mechanics, interactive design, and development using C# and Unity.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6">
+                <div class="service-card">
+                    <div class="body">
+                        <img src="{% static 'assets/imgs/ktu.png' %}"
+                        alt=""
+                        class="icon">
+                        <h6 class="title">B.Tech in Computer Science</h6>
+                        <p>College of Engineering Chengannur</p>
+                        <p class="unsubtitle">Graduated: 2020</p>
+                        <p class="subtitle">Built a strong foundation in programming, specializing in C++, Java, and Python.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experience Section -->
+        <h5 class="section-title mb-4 mt-5">X---------- Experience ----------X</h5>
+        <div class="row">
+            <div class="col-md-6 col-lg-6">
+                <div class="service-card">
+                    <div class="body">
+                        <img src="{% static 'assets/imgs/treble.png' %}"
+                        alt=""
+                        class="icon">
+                        <h6 class="title">Web Developer Intern</h6>
+                        <p>Treble India</p>
+                        <p class="unsubtitle">May 2021 - August 2021</p>
+                        <p class="subtitle">Enhanced website performance by optimizing front-end and back-end systems using Mern.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6">
+                <div class="service-card">
+                    <div class="body">
+                        <img src="{% static 'assets/imgs/keltron.png' %}"
+                        alt=""
+                        class="icon">
+                        <h6 class="title">Intern - Web Developer</h6>
+                        <p>Keltron Trivandrum</p>
+                        <p class="unsubtitle">January 2020 - May 2020</p>
+                        <p class="subtitle">Developed and maintained internal tools, focusing on UI/UX and feature enhancement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <h5 class="section-title mb-4 mt-5" >X------------ Skills ------------X</h5>
+        <div class="row">
+            <div class="col-md-6 col-lg-6">
+                <div class="service-card">
+                    <div class="body">
+                        <img src="{% static 'assets/imgs/planguagw.png' %}"
+                        alt=""
+                        class="icon">
+                        <h6 class="title">Programming Languages</h6>
+                        <p>C++, Python, Java, JavaScript, HTML, CSS</p>
+                        <p class="subtitle">Proficient in both object-oriented and procedural paradigms, ensuring robust application development.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6">
+                <div class="service-card">
+                    <div class="body">
+                        <img src="assets/imgs/framework.png"
+                        alt=""
+                        class="icon">
+                        <h6 class="title">Frameworks & Tools</h6>
+                        <p>Django, React, Unity, MongoDB, MySQL</p>
+                        <p class="subtitle">Skilled in creating scalable applications and managing databases effectively.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <h5 class="section-title mb-4 mt-5">Projects <a href="{% url 'Project' %}">View</a> </h5>
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="body">
+                        <h6 class="title">Portfolio Website</h6>
+                        <p>In Progress</p>
+                        <p class="subtitle">Developing a personal portfolio to showcase skills and projects using Django and JavaScript.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="body">
+                        <h6 class="title">3D Shooter Game </h6>
+                        <p>Completed: 2023</p>
+                        <p class="subtitle">Created a 2D action game in Unreal Engine using Blueprint, focusing on mechanics, AI, and player interaction.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4" >
+                <div class="service-card" >
+                    <div class="body">
+                        <h6 class="title">3D Space Explorer </h6>
+                        <p>Completed: 2023</p>
+                        <p class="subtitle">Created a 3D action game in Unity using C#, focusing on mechanics, AI, and player interaction.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- end of container -->
+</section><!-- end of resume section -->
+
+
+
+<section class="section" id="contact">
+    <div class="container text-center">
+        <p class="section-subtitle">Get in Touch</p>
+        <h6 class="section-title mb-6">Contact Me</h6>
+        <div class="row justify-content-center">
+            <!-- Gmail Card -->
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="body" style="padding: 15px;">
+                        <img src="{% static 'assets/imgs/email.png' %}" alt="Email Icon" class="icon" style="height: 40px; width: 40px;">
+                        <h6 class="title mt-2">Email</h6>
+                        <p style="font-weight: 700; color: rgb(82, 101, 129);">ajilsajith1999@gmail.com</p>
+                        <p style="font-weight: 700; color: rgb(82, 101, 129);">ajilvsajith@gmail.com</p>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Phone Card -->
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="body" style="padding: 15px;">
+                        <img src="{% static 'assets/imgs/phone.png' %}" alt="Phone Icon" class="icon" style="height: 40px; width: 40px;">
+                        <h6 class="title mt-2">Phone</h6>
+                        <p style="font-weight: 700; color: rgb(82, 101, 129);">+1 647-482-4335</p>
+                        <p style="font-weight: 700; color: rgb(82, 101, 129);">+91 9995389335</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}
+
+        <!-- Contact Form -->
+        <div class="row mt-5">
+            <div class="col-lg-8 mx-auto">
+                <form action="{% url 'save_contact' %}" method="post" class="contact-form">
+                    {% csrf_token %}
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="message" rows="5" name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer">
+            <p class="mb-0">Copyright
+                <script>document.write(new Date().getFullYear())</script> &copy;
+                Ajil V Sajith
+            </p>
+            <div class="social-links text-right m-auto ml-sm-auto">
+                <a href="javascript:void(0)" class="link"><i class="ti-facebook"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-twitter-alt"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-google"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-pinterest-alt"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-instagram"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-rss"></i></a>
+            </div>
+        </footer>
+    </div> <!-- end of page footer -->
+
+    <!-- core  -->
+    <script src="{% static 'assets/vendors/jquery/jquery-3.4.1.js' %}"></script>
+    <script src="{% static 'assets/vendors/bootstrap/bootstrap.bundle.js' %}"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="{% static 'assets/vendors/bootstrap/bootstrap.affix.js' %}"></script>
+
+    <!-- Meyawo js -->
+    <script src="{% static 'assets/js/meyawo.js' %}"></script>
+
+</body>
+
+</html>

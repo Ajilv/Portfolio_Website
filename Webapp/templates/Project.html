@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title>A V S</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="{% static 'assets/vendors/themify-icons/css/themify-icons.css' %}">
+    <!-- Bootstrap + Meyawo main styles -->
+    <link rel="stylesheet" href="{% static 'assets/css/meyawo.css' %}">
+    <!-- Include Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Include Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+<nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+    <div class="container">
+        <a class="logo" href="#">AVS</a>
+        <ul class="nav">
+            <li class="item">
+                <a class="link" href="#home">Home</a>
+            </li>
+            <li class="item">
+                <a class="link" href="#about">About</a>
+            </li>
+            <li class="item">
+                <a class="link" href="#skills">Skills</a>
+            </li>
+            <li class="item">
+                <a class="link" href="#resume">Resume</a>
+            </li>
+            <li class="item">
+                <a class="link" href="#contact">Contact</a>
+            </li>
+            <li class="item ml-md-3">
+                <a href="{% static 'assets/Files/Ajil_Resume2024.pdf' %}" class="btn btn-primary">Download CV</a>
+            </li>
+        </ul>
+        <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+            <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+            </div>
+        </a>
+    </div>
+</nav>
+
+
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">Welcome to my Projects Section ....</span>
+            </h1>
+            <a href="https://github.com/Ajilv"><button class="btn btn-outline-warning" style="margin-left:230px;">Visit My Github</button></a>
+        </div>
+    </header><!-- end of page header -->
+
+  <div class="container my-5">
+    <div class="row g-4">
+        {% for project in projects %}
+            <div class="col-md-4">
+                <div class="card shadow-lg rounded-3">
+                    <!-- Image Slider -->
+                    <div id="carousel{{ forloop.counter }}" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            {% if project.img1 %}
+                                <div class="carousel-item active">
+                                    <img src="{{ project.img1.url }}" class="d-block w-100 card-img-top" alt="Project Image 1">
+                                </div>
+                            {% endif %}
+                            {% if project.img2 %}
+                                <div class="carousel-item">
+                                    <img src="{{ project.img2.url }}" class="d-block w-100 card-img-top" alt="Project Image 2">
+                                </div>
+                            {% endif %}
+                            {% if project.img3 %}
+                                <div class="carousel-item">
+                                    <img src="{{ project.img3.url }}" class="d-block w-100 card-img-top" alt="Project Image 3">
+                                </div>
+                            {% endif %}
+                        </div>
+                        <!-- Carousel Controls -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel{{ forloop.counter }}" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel{{ forloop.counter }}" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+
+                    <!-- Project Info -->
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">{{ project.name }}</h5>
+                        {% if project.date %}
+                            <p class="text-muted"><i class="bi bi-calendar3"></i> Completed on: {{ project.date }}</p>
+                        {% endif %}
+                        <div class="mb-2">
+                            <strong>Skills:</strong>
+                            <div>
+                                    <span class="badge bg-info text-dark me-1">{{ project.skills }}</span>
+                            </div>
+                        </div>
+                        <p class="card-text text-secondary">{{ project.desc }}</p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+<section class="section" id="contact">
+    <div class="container text-center">
+        <p class="section-subtitle">Get in Touch</p>
+        <h6 class="section-title mb-6">Contact Me</h6>
+        <div class="row justify-content-center">
+            <!-- Gmail Card -->
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="body" style="padding: 15px;">
+                        <img src="{% static 'assets/imgs/email.png' %}" alt="Email Icon" class="icon" style="height: 40px; width: 40px;">
+                        <h6 class="title mt-2">Email</h6>
+                        <p style="font-weight: 700; color: rgb(82, 101, 129);">ajilsajith1999@gmail.com</p>
+                        <p style="font-weight: 700; color: rgb(82, 101, 129);">ajilvsajith@gmail.com</p>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Phone Card -->
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="body" style="padding: 15px;">
+                        <img src="{% static 'assets/imgs/phone.png' %}" alt="Phone Icon" class="icon" style="height: 40px; width: 40px;">
+                        <h6 class="title mt-2">Phone</h6>
+                        <p style="font-weight: 700; color: rgb(82, 101, 129);">+1 647-482-4335</p>
+                        <p style="font-weight: 700; color: rgb(82, 101, 129);">+91 9995389335</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Contact Form -->
+        <div class="row mt-5">
+            <div class="col-lg-8 mx-auto">
+                <form action="{% url 'save_contact' %}" method="post" class="contact-form">
+                    {% csrf_token %}
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer">
+            <p class="mb-0">Copyright
+                <script>document.write(new Date().getFullYear())</script> &copy;
+                Ajil V Sajith
+            </p>
+            <div class="social-links text-right m-auto ml-sm-auto">
+                <a href="javascript:void(0)" class="link"><i class="ti-facebook"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-twitter-alt"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-google"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-pinterest-alt"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-instagram"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-rss"></i></a>
+            </div>
+        </footer>
+    </div> <!-- end of page footer -->
+
+    <!-- Bootstrap JS (requires Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- core  -->
+    <script src="{% static 'assets/vendors/jquery/jquery-3.4.1.js' %}"></script>
+    <script src="{% static 'assets/vendors/bootstrap/bootstrap.bundle.js' %}"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="{% static 'assets/vendors/bootstrap/bootstrap.affix.js' %}"></script>
+
+    <!-- Meyawo js -->
+    <script src="{% static 'assets/js/meyawo.js' %}"></script>
+
+</body>
+
+</html>

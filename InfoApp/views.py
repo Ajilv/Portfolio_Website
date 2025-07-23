@@ -1,6 +1,6 @@
 from django.shortcuts import render,redirect
 from InfoApp.models import SkillDb,ProjectDb
-
+from Webapp.models import ContactDb
 from django.contrib import messages
 from datetime import datetime
 
@@ -14,9 +14,6 @@ def Add_Projects(request):
     return render(request,"Add_Projects.html",{'data1':data1})
 
 
-
-from django.shortcuts import render, redirect
-from .models import ProjectDb
 
 def save_project(request):
     if request.method == "POST":
@@ -57,7 +54,16 @@ def Delete_project(request,pid):
     return redirect(View_Projects)
 
 
+def contactInfo(request):
+    data=ContactDb.objects.all()
+    return render(request,"Contact_Info.html",{'data':data})
 
+
+
+def Del_contact(request,cid):
+    data=ContactDb.objects.get(id=cid)
+    data.delete()
+    return redirect(contactInfo)
 
 
 

@@ -14,4 +14,7 @@ urlpatterns=[
     path('View_Skills/',views.View_Skills,name="View_Skills"),
     path('Save_Skills/',views.Save_Skills,name="Save_Skills"),
     path('Del_Skills/<int:sid>',views.Del_Skills,name="Del_Skills"),
+
+    path('ViewContact',views.contactInfo,name="Contact_details"),
+    path('Del_contact/<int:cid>',views.Del_contact,name="Del_contact")
 ]

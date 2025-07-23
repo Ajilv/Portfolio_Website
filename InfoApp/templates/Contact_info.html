@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+{% extends 'index.html' %}
+
+{% block content %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Infos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+
+
+
+
+<div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Contacts Info </h4>
+                    <div class="table-responsive">
+                        {% if data %}
+                        <table class="table table-bordered table-striped">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>#</th>
+                                    <th>Person Name</th>
+                                    <th>Email ID</th>
+                                    <th>Message</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for i in data %}
+                                <tr>
+                                    <td>{{ forloop.counter }}</td>
+                                    <td>{{ i.name }}</td>
+                                    <td>{{ i.email }}</td>
+                                    <td style="word-wrap: break-word; white-space: normal; max-width: 300px;">{{ project.desc }}</td>
+                                    <td>{{ i.message }}</td>
+
+                                    <td>
+                                        <a href="{% url 'Del_contact' cid=i.id %}" class="btn btn-outline-danger">Delete</a>
+
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    {% else %}
+                        <p class="text-center text-muted">No projects found.</p>
+                    {% endif %}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+{% endblock %}

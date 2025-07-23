@@ -23,25 +23,19 @@
 
 <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
     <div class="container">
-        <a class="logo" href="#">AVS</a>
+        <a class="logo" href="{% url 'HomePage' %}">AVS</a>
         <ul class="nav">
             <li class="item">
-                <a class="link" href="#home">Home</a>
+                <a class="link" href="{% url 'HomePage' %}">Home</a>
             </li>
             <li class="item">
-                <a class="link" href="#about">About</a>
-            </li>
-            <li class="item">
-                <a class="link" href="#skills">Skills</a>
-            </li>
-            <li class="item">
-                <a class="link" href="#resume">Resume</a>
+                <a class="link" href="#project">Projects</a>
             </li>
             <li class="item">
                 <a class="link" href="#contact">Contact</a>
             </li>
             <li class="item ml-md-3">
-                <a href="{% static 'assets/Files/Ajil_Resume2024.pdf' %}" class="btn btn-primary">Download CV</a>
+                <a href="{% static 'assets/Files/Resume.pdf' %}" class="btn btn-primary">Download CV</a>
             </li>
         </ul>
         <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
@@ -64,7 +58,7 @@
         </div>
     </header><!-- end of page header -->
 
-  <div class="container my-5">
+  <div class="container my-5" id="project">
     <div class="row g-4">
         {% for project in projects %}
             <div class="col-md-4">

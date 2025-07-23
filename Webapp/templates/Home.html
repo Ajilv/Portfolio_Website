@@ -22,7 +22,7 @@
         <a class="logo" href="#">AVS</a>
         <ul class="nav">
             <li class="item">
-                <a class="link" href="#home">Home</a>
+                <a class="link" href="">Home</a>
             </li>
             <li class="item">
                 <a class="link" href="#about">About</a>
@@ -31,13 +31,13 @@
                 <a class="link" href="#skills">Skills</a>
             </li>
             <li class="item">
-                <a class="link" href="#resume">Resume</a>
+                <a class="link" href="#journey">Timeline</a>
             </li>
             <li class="item">
                 <a class="link" href="#contact">Contact</a>
             </li>
             <li class="item ml-md-3">
-                <a href="{% static 'assets/Files/Ajil_Resume2024.pdf' %}" class="btn btn-primary">Download CV</a>
+                <a href="{% static 'assets/Files/Resume.pdf' %}" class="btn btn-primary">Download CV</a>
             </li>
         </ul>
         <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
@@ -59,7 +59,7 @@
             </h1>
             <p class="header-subtitle">Python Developer | Jr. Game Developer | Full-Stack Enthusiast</p>
 
-            <a href="https://github.com/Ajilv"><button class="btn btn-primary">Visit My Works</button></a>
+            <a href="{% url 'Project' %}"><button class="btn btn-primary">Visit My Works</button></a>
         </div>
     </header><!-- end of page header -->
 
@@ -70,26 +70,25 @@
         <div class="container text-center" style="padding-top: 4rem;">
             <!-- about wrapper -->
             <div class="about">
-                <div class="about-img-holder">
-                    <img src="{% static 'assets/imgs/man.png' %}" class="about-img"
-                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                </div>
+<!--                <div class="about-img-holder">-->
+<!--                    <img src="{% static 'assets/imgs/Image.png' %}" class="about-img">-->
+<!--                </div>-->
                 <div class="about-caption">
                     <p class="section-subtitle">Who Am I?</p>
                     <h2 class="section-title mb-3">About Me</h2>
-                    <p>
-                        Hello! I'm Ajil V Sajith, a passionate developer with a strong foundation in programming and problem-solving. My journey in tech began with C++ and Java, laying the groundwork for my growth as a developer. Over the years, I’ve expanded my expertise to Python, Django, and web development.
-                    </p>
-                    <p>
-                        I hold an Advanced Diploma in Game Programming from Centennial College, where I honed my skills in C# and Unity, creating immersive gaming experiences. Recently, I’ve been shifting my focus towards full-stack development, aiming to build efficient and user-friendly web applications.
-                    </p>
-                    <p>
-                        A lover of mathematics and an avid learner, I’m always seeking challenges that allow me to craft innovative solutions. Currently, I’m pursuing a certification in Django to further strengthen my backend development skills.
-                    </p>
-                    <p>
-                        Beyond coding, I enjoy tinkering with new technologies, developing my portfolio website, and exploring creative ways to bring ideas to life. I’m eager to collaborate on exciting projects and make a meaningful impact in the tech world. Let’s build something amazing together!
-                    </p>
-                    <a href="assets/Files/Ajil_Resume2024.pdf">
+                            <p style="font-size: 1.1rem; line-height: 1.6; color: #555; margin-bottom: 1rem;">
+                                Greetings! I’m Ajil V Sajith, a dedicated backend developer with a strong foundation in programming and a passion for building robust, scalable solutions. My technical journey began with mastering C++ and Java, which laid the groundwork for my expertise in Python, Django, and Django REST Framework.
+                            </p>
+                            <p style="font-size: 1.1rem; line-height: 1.6; color: #555; margin-bottom: 1rem;">
+                                Specializing in backend development, I focus on crafting efficient APIs using Django REST Framework and building dynamic web applications with Django. I also have experience in front-end development with React, enabling me to create seamless, user-centric experiences. My Advanced Diploma in Software Technologies: Game Development from Centennial College further honed my skills in C# and Unity, where I developed engaging gaming experiences.
+                            </p>
+                            <p style="font-size: 1.1rem; line-height: 1.6; color: #555; margin-bottom: 1rem;">
+                                Driven by a love for problem-solving and continuous learning, I’m currently pursuing a Django certification to deepen my expertise in backend development. My analytical mindset, rooted in a passion for mathematics, empowers me to tackle complex challenges and deliver high-quality, performant solutions.
+                            </p>
+                            <p style="font-size: 1.1rem; line-height: 1.6; color: #555; margin-bottom: 1rem;">
+                                Beyond coding, I’m passionate about exploring emerging technologies, refining my portfolio website, and finding innovative ways to bring ideas to life. I’m eager to collaborate on impactful projects and contribute to advancements in the tech industry. Let’s connect and build something extraordinary!
+                            </p>
+                    <a href="assets/Files/Resume.pdf">
                     <button class="btn-rounded btn btn-outline-primary mt-4">Download CV</button></a>
                 </div>
             </div><!-- end of about wrapper -->
@@ -171,137 +170,160 @@
 
     <!-- end of service section -->
 <!-- Resume Section -->
-<section class="section" id="resume">
-    <div class="container text-center" style="box-shadow: 0px 0px 4px  rgb(218, 216, 216); padding: 1rem;">
-        <p class="section-subtitle">My Professional Journey</p>
-        <h6 class="section-title mb-6" style="text-decoration: underline;">Resume</h6>
+<section class="section" id="journey">
+    <div class="container text-center" style="box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1); padding: 2rem; border-radius: 10px; ">
+        <p class="section-subtitle" style="font-size: 1.2rem; color: #555; font-weight: 500;">A Timeline of My Growth</p>
+        <h6 class="section-title mb-6" style="text-decoration: none; font-size: 2rem; font-weight: 700; color: #6c5ca4;">My Journey</h6>
 
-        <!-- Education Section -->
-        <h5 class="section-title mb-4">X---------- Education ----------X</h5>
-        <div class="row">
-            <div class="col-md-6 col-lg-6">
-                <div class="service-card">
-                    <div class="body">
-                        <img src="{% static 'assets/imgs/cenLogo.png' %}"
-                        alt=""
-                        class="icon">
-                        <h6 class="title">Advanced Diploma in Game Programming</h6>
-                        <p>Centennial College, Canada</p>
-                        <p class="unsubtitle">Graduated: 2023</p>
-                        <p class="subtitle">Focused on game mechanics, interactive design, and development using C# and Unity.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-6">
-                <div class="service-card">
-                    <div class="body">
-                        <img src="{% static 'assets/imgs/ktu.png' %}"
-                        alt=""
-                        class="icon">
-                        <h6 class="title">B.Tech in Computer Science</h6>
-                        <p>College of Engineering Chengannur</p>
-                        <p class="unsubtitle">Graduated: 2020</p>
-                        <p class="subtitle">Built a strong foundation in programming, specializing in C++, Java, and Python.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- Timeline Container -->
+        <div class="timeline" style="position: relative; padding: 2rem 0;">
+            <!-- Timeline Line -->
+            <div style="position: absolute; left: 50%; top: 0; bottom: 0; width: 4px; background:#6c5ca4 ; transform: translateX(-50%);"></div>
 
-        <!-- Experience Section -->
-        <h5 class="section-title mb-4 mt-5">X---------- Experience ----------X</h5>
-        <div class="row">
-            <div class="col-md-6 col-lg-6">
-                <div class="service-card">
-                    <div class="body">
-                        <img src="{% static 'assets/imgs/treble.png' %}"
-                        alt=""
-                        class="icon">
-                        <h6 class="title">Web Developer Intern</h6>
-                        <p>Treble India</p>
-                        <p class="unsubtitle">May 2021 - August 2021</p>
-                        <p class="subtitle">Enhanced website performance by optimizing front-end and back-end systems using Mern.</p>
+            <!-- 2024: Experience -->
+            <div class="timeline-item" style="position: relative; margin: 2rem 0; display: flex; justify-content: space-between; align-items: center;">
+                <div class="timeline-content left" style="width: 45%; text-align: right; padding-right: 2rem;">
+                    <div class="service-card" style="background: #fff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                        <div class="body">
+                            <img src="{% static 'assets/imgs/luminar.png' %}" alt="" class="icon" style="width: 50px; margin-bottom: 1rem;">
+                            <h6 class="title" style="font-size: 1.3rem; color: #6c5ca4;">Python Full-Stack Developer Intern</h6>
+                            <p style="color: #666;">Luminar Technolab</p>
+                            <p class="unsubtitle" style="color: #888; font-style: italic;">September 2024 - Present</p>
+                            <p class="subtitle" style="color: #555;">Honed expertise in Django, developing dynamic web applications with a focus on performance and scalability.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-year" style="position: absolute; left: 50%; transform: translateX(-50%); background:#6c5ca4; color: #fff; padding: 0.5rem 1rem; border-radius: 50%; font-weight: bold;">2024</div>
+                <div class="timeline-content right" style="width: 45%;"></div>
+            </div>
+
+            <!-- 2023: Education & Projects -->
+            <div class="timeline-item" style="position: relative; margin: 2rem 0; display: flex; justify-content: space-between; align-items: center;">
+                <div class="timeline-content left" style="width: 45%; text-align: right; padding-right: 2rem;">
+                    <div class="service-card" style="background: #fff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                        <div class="body">
+                            <img src="{% static 'assets/imgs/cenLogo.png' %}" alt="" class="icon" style="width: 50px; margin-bottom: 1rem;">
+                            <h6 class="title" style="font-size: 1.3rem; color: #6c5ca4;">Post Graduation Diploma in Software Technologies: Game Development</h6>
+                            <p class="unsubtitle" style="color: #666;">Centennial College, Canada</p>
+                            <p class="unsubtitle" style="color: #888; font-style: italic;">January 2022 - August 2023</p>
+                            <p class="subtitle" style="color: #555;">Gained hands-on experience in game development, web technologies, and software testing using tools like C#, Unity, and modern frameworks.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-year" style="position: absolute; left: 50%; transform: translateX(-50%); background: #6c5ca4; color: #fff; padding: 0.5rem 1rem; border-radius: 50%; font-weight: bold;">2023</div>
+                <div class="timeline-content right" style="width: 45%; text-align: left; padding-left: 2rem;">
+                    <div class="service-card" style="background: #fff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                        <div class="body">
+                            <h6 class="title" style="font-size: 1.3rem; color: #6c5ca4;">Developed a 3D Shooter Game </h6>
+                            <p class="unsubtitle" style="color: #666;">Completed: 2023</p>
+                            <p class="subtitle" style="color: #555;">Designed and developed a 2D action game using Unreal Engine and a 3D space exploration shooter in Unity as part of the final year project. Focused on implementing AI behavior, gameplay mechanics in collaboration with a team.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-6">
-                <div class="service-card">
-                    <div class="body">
-                        <img src="{% static 'assets/imgs/keltron.png' %}"
-                        alt=""
-                        class="icon">
-                        <h6 class="title">Intern - Web Developer</h6>
-                        <p>Keltron Trivandrum</p>
-                        <p class="unsubtitle">January 2020 - May 2020</p>
-                        <p class="subtitle">Developed and maintained internal tools, focusing on UI/UX and feature enhancement.</p>
+
+            <!-- 2021: Experience -->
+            <div class="timeline-item" style="position: relative; margin: 2rem 0; display: flex; justify-content: space-between; align-items: center;">
+                <div class="timeline-content left" style="width: 45%; text-align: right; padding-right: 2rem;">
+                    <div class="service-card" style="background: #fff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                        <div class="body">
+                            <img src="{% static 'assets/imgs/treble.png' %}" alt="" class="icon" style="width: 50px; margin-bottom: 1rem;">
+                            <h6 class="title" style="font-size: 1.3rem; color: #6c5ca4;">Web Developer Intern</h6>
+                            <p style="color: #666;">Treble India</p>
+                            <p class="unsubtitle" style="color: #888; font-style: italic;">May 2021 - December 2021</p>
+                            <p class="subtitle" style="color: #555;">Contributed to full-stack projects, focusing on building responsive UI components and efficient backend APIs.</p>
+                        </div>
                     </div>
                 </div>
+                <div class="timeline-year" style="position: absolute; left: 50%; transform: translateX(-50%); background: #6c5ca4; color: #fff; padding: 0.5rem 1rem; border-radius: 50%; font-weight: bold;">2021</div>
+                <div class="timeline-content right" style="width: 45%; text-align: left; padding-left: 2rem;">
+                    <div class="service-card" style="background: #fff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                        <div class="body">
+                            <h6 class="title" style="font-size: 1.3rem; color: #6c5ca4;">B.Tech in Computer Science</h6>
+                            <p style="color: #666;">College of Engineering Chengannur</p>
+                            <p class="unsubtitle" style="color: #888; font-style: italic;">Graduated: April 2021</p>
+                            <p class="subtitle" style="color: #555;">Developed a solid foundation in software development with proficiency in C++, Java, and Python, supported by academic projects and practical learning.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2019: Experience -->
+            <div class="timeline-item" style="position: relative; margin: 2rem 0; display: flex; justify-content: space-between; align-items: center;">
+                <div class="timeline-content left" style="width: 45%; text-align: right; padding-right: 2rem;">
+                    <div class="service-card" style="background: #fff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                        <div class="body">
+                            <img src="{% static 'assets/imgs/keltron.png' %}" alt="" class="icon" style="width: 50px; margin-bottom: 1rem;">
+                            <h6 class="title" style="font-size: 1.3rem; color: #6c5ca4;">Intern - Web Developer</h6>
+                            <p style="color: #666;">Keltron Trivandrum</p>
+                            <p class="unsubtitle" style="color: #888; font-style: italic;">2019</p>
+                            <p class="subtitle" style="color: #555;">Contributed to the development and enhancement of internal web tools, emphasizing user-friendly interfaces and stable backend functionality.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-year" style="position: absolute; left: 50%; transform: translateX(-50%); background: #6c5ca4; color: #fff; padding: 0.5rem 1rem; border-radius: 50%; font-weight: bold;">2019</div>
+                <div class="timeline-content right" style="width: 45%;"></div>
+            </div>
+
+            <!-- 2017: Education Start -->
+            <div class="timeline-item" style="position: relative; margin: 2rem 0; display: flex; justify-content: space-between; align-items: center;">
+                <div class="timeline-content left" style="width: 45%; text-align: right; padding-right: 2rem;">
+                    <div class="service-card" style="background: #fff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                        <div class="body">
+                            <h6 class="title" style="font-size: 1.3rem; color: #6c5ca4;">Started B.Tech in Computer Science</h6>
+                            <p style="color: #666;">College of Engineering Chengannur</p>
+                            <p class="unsubtitle" style="color: #888; font-style: italic;">Began: 2017</p>
+                            <p class="subtitle" style="color: #555;">Laid the foundation in core programming concepts, algorithms, data structures, and computer science fundamentals through a structured academic curriculum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-year" style="position: absolute; left: 50%; transform: translateX(-50%); background: #6c5ca4; color: #fff; padding: 0.5rem 1rem; border-radius: 50%; font-weight: bold;">2017</div>
+                <div class="timeline-content right" style="width: 45%;"></div>
+            </div>
+
+            <!-- Ongoing: Portfolio Project -->
+            <div class="timeline-item" style="position: relative; margin: 2rem 0; display: flex; justify-content: space-between; align-items: center;">
+                <div class="timeline-content left" style="width: 45%; text-align: right; padding-right: 2rem;">
+                    <div class="service-card" style="background: #fff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                        <div class="body">
+                            <h6 class="title" style="font-size: 1.3rem; color: #6c5ca4;">Freelancing and Upskilling </h6>
+                            <p class="unsubtitle" style="color: #666;">In Progress</p>
+                            <p class="subtitle" style="color: #555;">Actively developing a dynamic portfolio to showcase my technical skills.
+                                Worked on multiple backend projects to design and implement RESTful APIs and endpoints, enhancing real-world development experience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-year" style="position: absolute; left: 50%; transform: translateX(-50%); background: #6c5ca4; color: #fff; padding: 0.5rem 1rem; border-radius: 50%; font-weight: bold;">Ongoing</div>
+                <div class="timeline-content right" style="width: 45%;"></div>
             </div>
         </div>
 
         <!-- Skills Section -->
-        <h5 class="section-title mb-4 mt-5" >X------------ Skills ------------X</h5>
+        <h5 class="section-title mb-4 mt-5" style="font-size: 1.5rem; color: #6c5ca4;"> Skills</h5>
         <div class="row">
             <div class="col-md-6 col-lg-6">
-                <div class="service-card">
+                <div class="service-card" style="background: #fff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
                     <div class="body">
-                        <img src="{% static 'assets/imgs/planguagw.png' %}"
-                        alt=""
-                        class="icon">
-                        <h6 class="title">Programming Languages</h6>
-                        <p>C++, Python, Java, JavaScript, HTML, CSS</p>
-                        <p class="subtitle">Proficient in both object-oriented and procedural paradigms, ensuring robust application development.</p>
+                        <img src="{% static 'assets/imgs/planguagw.png' %}" alt="" class="icon" style="width: 50px; margin-bottom: 1rem;">
+                        <h6 class="title" style="font-size: 1.3rem; color: #6c5ca4;">Programming Languages</h6>
+                        <p style="color: #666;">C++, Python, Java, JavaScript, HTML, CSS</p>
+                        <p class="subtitle" style="color: #555;">Fluent in object-oriented and procedural programming for robust, scalable applications.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-lg-6">
-                <div class="service-card">
+                <div class="service-card" style="background: #fff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
                     <div class="body">
-                        <img src="assets/imgs/framework.png"
-                        alt=""
-                        class="icon">
-                        <h6 class="title">Frameworks & Tools</h6>
-                        <p>Django, React, Unity, MongoDB, MySQL</p>
-                        <p class="subtitle">Skilled in creating scalable applications and managing databases effectively.</p>
+                        <img src="{% static 'assets/imgs/framework.png' %}" alt="" class="icon" style="width: 50px; margin-bottom: 1rem;">
+                        <h6 class="title" style="font-size: 1.3rem; color: #6c5ca4;">Frameworks & Tools</h6>
+                        <p style="color: #666;">Django, DRF, React, Unity, MongoDB, MySQL</p>
+                        <p class="subtitle" style="color: #555;">Adept at building scalable applications and managing complex databases.</p>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- Projects Section -->
-        <h5 class="section-title mb-4 mt-5">Projects <a href="{% url 'Project' %}">View</a> </h5>
-        <div class="row">
-            <div class="col-md-6 col-lg-4">
-                <div class="service-card">
-                    <div class="body">
-                        <h6 class="title">Portfolio Website</h6>
-                        <p>In Progress</p>
-                        <p class="subtitle">Developing a personal portfolio to showcase skills and projects using Django and JavaScript.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="service-card">
-                    <div class="body">
-                        <h6 class="title">3D Shooter Game </h6>
-                        <p>Completed: 2023</p>
-                        <p class="subtitle">Created a 2D action game in Unreal Engine using Blueprint, focusing on mechanics, AI, and player interaction.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4" >
-                <div class="service-card" >
-                    <div class="body">
-                        <h6 class="title">3D Space Explorer </h6>
-                        <p>Completed: 2023</p>
-                        <p class="subtitle">Created a 3D action game in Unity using C#, focusing on mechanics, AI, and player interaction.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </div><!-- end of container -->
-</section><!-- end of resume section -->
-
+</section><!-- end of journey section -->
 
 
 <section class="section" id="contact">

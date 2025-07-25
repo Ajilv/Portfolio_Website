@@ -96,77 +96,191 @@
     </section> <!-- end of about section -->
 
     <!-- service section -->
-    <section class="section" id="skills">
-        <div class="container text-center">
-            <p class="section-subtitle">What I Bring to the Table</p>
-            <h6 class="section-title mb-6">Skills</h6>
-            <!-- row -->
-            <div class="row mb-4">
-                <!-- First Row -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card ">
-                        <div class="body">
-                            <img src="{% static 'assets/imgs/design.png' %}"
-                                 alt=""
-                                 class="icon">
-                            <h6 class="title">Frontend Development</h6>
-                            <p class="subtitle">Building responsive and visually appealing interfaces using HTML, CSS, JavaScript, and React.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="{% static 'assets/imgs/python.png' %}"
-                                 alt="ProgrammingLanguages"
-                                 class="icon">
-                            <h6 class="title">Programming Languages</h6>
-                            <p class="subtitle">Proficient in Python, C++, C#, Java, and JavaScript. Strong foundation in programming principles and problem-solving.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="{% static 'assets/imgs/game-development.png' %}"
-                                 alt="Game"
-                                 class="icon">
-                            <h6 class="title">Game Development</h6>
-                            <p class="subtitle">Experience with Unity (C#) for creating 2D/3D games. Knowledge of asset management and blueprint systems in Unreal Engine.</p>
-                        </div>
-                    </div>
-                </div>
+<section class="section" id="skills">
+  <div class="container text-center">
+    <p class="section-subtitle">What I Bring to the Table</p>
+    <h6 class="section-title mb-6">Skills</h6>
+
+    <!-- First Row -->
+    <div class="row mb-4">
+      <!-- Frontend Development -->
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card">
+          <div class="body">
+            <div class="unsubtitle">
+              <img src="{% static 'assets/imgs/design.png' %}" alt="" class="icon">
+              <h6 class="title">Frontend Development</h6>
             </div>
-
-
-
-            <!-- Second Row -->
-            <div class="row">
-                <div class="col-md-6 col-lg-6">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="{% static 'assets/imgs/data-management.png' %}"
-                                 alt="Database"
-                                 class="icon">
-                            <h6 class="title">Database Management</h6>
-                            <p class="subtitle">Skilled in using MySQL and MongoDB for organizing and querying data effectively. Ensures efficient database designs.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="{% static 'assets/imgs/solution.png' %}"
-                                 alt="Problem"
-                                 class="icon">
-                            <h6 class="title">Problem Solving</h6>
-                            <p class="subtitle">Leverage a deep love for mathematics and logical thinking to solve complex coding and algorithmic challenges.</p>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- end of second row -->
+            <div class="subtitle">
+              <div style="display: flex; align-items: center; margin-bottom: 12px;">
+                <span style="min-width: 100px; font-weight: bold; color: #333;">HTML</span>
+                <span style="margin-left: 60px; font-weight: 500; color: #28a745;">Advanced</span>
+              </div>
+              <div style="display: flex; align-items: center; margin-bottom: 12px;">
+                <span style="min-width: 100px; font-weight: bold; color: #333;">CSS</span>
+                <span style="margin-left: 60px; font-weight: 500; color: #28a745;">Advanced</span>
+              </div>
+              <div style="display: flex; align-items: center; margin-bottom: 12px;">
+                <span style="min-width: 100px; font-weight: bold; color: #333;">JavaScript</span>
+                <span style="margin-left: 60px; font-weight: 500; color: #ffc107;">Proficient</span>
+              </div>
+              <div style="display: flex; align-items: center; margin-bottom: 12px;">
+                <span style="min-width: 100px; font-weight: bold; color: #333;">React</span>
+                <span style="margin-left: 60px; font-weight: 500; color: #ffc107;">Proficient</span>
+              </div>
+            </div>
+          </div>
         </div>
-    </section><!-- end of skills section -->
+      </div>
+
+      <!-- Programming Languages -->
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card">
+          <div class="body">
+            <div class="unsubtitle">
+              <img src="{% static 'assets/imgs/python.png' %}" alt="ProgrammingLanguages" class="icon">
+              <h6 class="title">Programming Languages</h6>
+            </div>
+            <div class="subtitle">
+              <!-- Repeated skill blocks -->
+              <div style="display: flex; align-items: center; margin-bottom: 12px;">
+                <span style="min-width: 100px; font-weight: bold; color: #333;">Python</span>
+                <span style="margin-left: 60px; font-weight: 500; color: #28a745;">Advanced</span>
+              </div>
+              <div style="display: flex; align-items: center; margin-bottom: 12px;">
+                <span style="min-width: 100px; font-weight: bold; color: #333;">C++</span>
+                <span style="margin-left: 60px; font-weight: 500; color: #28a745;">Advanced</span>
+              </div>
+              <div style="display: flex; align-items: center; margin-bottom: 12px;">
+                <span style="min-width: 100px; font-weight: bold; color: #333;">C#</span>
+                <span style="margin-left: 60px; font-weight: 500; color: #17a2b8;">Intermediate</span>
+              </div>
+              <div style="display: flex; align-items: center; margin-bottom: 12px;">
+                <span style="min-width: 100px; font-weight: bold; color: #333;">Java</span>
+                <span style="margin-left: 60px; font-weight: 500; color: #ffc107;">Proficient</span>
+              </div>
+              <div style="display: flex; align-items: center; margin-bottom: 12px;">
+                <span style="min-width: 100px; font-weight: bold; color: #333;">JavaScript</span>
+                <span style="margin-left: 60px; font-weight: 500; color: #ffc107;">Proficient</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Game Development -->
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card">
+          <div class="body">
+            <div class="unsubtitle">
+              <img src="{% static 'assets/imgs/game-development.png' %}" alt="Game" class="icon">
+              <h6 class="title">Game Development</h6>
+            </div>
+            <div class="subtitle">
+              <!-- Game skills -->
+              <div style="display: flex; align-items: center; margin-bottom: 12px;">
+                <span style="min-width: 150px; font-weight: bold; color: #333;">Unity (C#)</span>
+                <span style="margin-left: 40px; font-weight: 500; color: #28a745;">Advanced</span>
+              </div>
+              <div style="display: flex; align-items: center; margin-bottom: 12px;">
+                <span style="min-width: 150px; font-weight: bold; color: #333;">2D / 3D Game Dev</span>
+                <span style="margin-left: 40px; font-weight: 500; color: #28a745;">Proficient</span>
+              </div>
+              <div style="display: flex; align-items: center; margin-bottom: 12px;">
+                <span style="min-width: 150px; font-weight: bold; color: #333;">Unreal Engine</span>
+                <span style="margin-left: 40px; font-weight: 500; color: #ffc107;">Intermediate</span>
+              </div>
+              <div style="display: flex; align-items: center; margin-bottom: 12px;">
+                <span style="min-width: 150px; font-weight: bold; color: #333;">Blueprint System</span>
+                <span style="margin-left: 40px; font-weight: 500; color: #ffc107;">Intermediate</span>
+              </div>
+              <div style="display: flex; align-items: center; margin-bottom: 12px;">
+                <span style="min-width: 150px; font-weight: bold; color: #333;">Asset Management</span>
+                <span style="margin-left: 40px; font-weight: 500; color: #28a745;">Proficient</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end of first row -->
+
+    <!-- Second Row -->
+    <div class="row">
+      <!-- Database Management -->
+      <div class="col-md-6 col-lg-6">
+        <div class="service-card">
+          <div class="body">
+            <div class="unsubtitle">
+              <img src="{% static 'assets/imgs/data-management.png' %}" alt="Database" class="icon">
+              <h6 class="title">Database Management</h6>
+            </div>
+            <div class="subtitle">
+              <!-- DB skills -->
+              <div style="display: flex; align-items: center; margin-bottom: 12px;">
+                <span style="min-width: 150px; font-weight: bold; color: #333;">MySQL</span>
+                <span style="margin-left: 120px; font-weight: 500; color: #28a745;">Advanced</span>
+              </div>
+              <div style="display: flex; align-items: center; margin-bottom: 12px;">
+                <span style="min-width: 150px; font-weight: bold; color: #333;">Oracle</span>
+                <span style="margin-left: 120px; font-weight: 500; color: #28a745;">Advanced</span>
+              </div>
+              <div style="display: flex; align-items: center; margin-bottom: 12px;">
+                <span style="min-width: 150px; font-weight: bold; color: #333;">PostgreSQL</span>
+                <span style="margin-left: 120px; font-weight: 500; color: #28a745;">Advanced</span>
+              </div>
+              <div style="display: flex; align-items: center; margin-bottom: 12px;">
+                <span style="min-width: 150px; font-weight: bold; color: #333;">SQLite</span>
+                <span style="margin-left: 120px; font-weight: 500; color: #17a2b8;">Proficient</span>
+              </div>
+              <div style="display: flex; align-items: center; margin-bottom: 12px;">
+                <span style="min-width: 150px; font-weight: bold; color: #333;">ORM (Django)</span>
+                <span style="margin-left: 110px; font-weight: 500; color: #28a745;">Advanced</span>
+              </div>
+              <div style="display: flex; align-items: center; margin-bottom: 12px;">
+                <span style="min-width: 150px; font-weight: bold; color: #333;">NoSQL (MongoDB)</span>
+                <span style="margin-left: 120px; font-weight: 500; color: #ffc107;">Intermediate</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Backend Technologies -->
+      <div class="col-md-6 col-lg-6">
+        <div class="service-card">
+          <div class="body">
+            <div class="unsubtitle">
+              <img src="{% static 'assets/imgs/solution.png' %}" alt="Backend Technologies" class="icon">
+              <h6 class="title">Backend Technologies</h6>
+            </div>
+            <div class="subtitle">
+              <div style="display: flex; align-items: center; margin-bottom: 12px;">
+                <span style="min-width: 150px; font-weight: bold; color: #333;">Python</span>
+                <span style="margin-left: 150px; font-weight: 500; color: #28a745;">Advanced</span>
+              </div>
+              <div style="display: flex; align-items: center; margin-bottom: 12px;">
+                <span style="min-width: 150px; font-weight: bold; color: #333;">Django</span>
+                <span style="margin-left: 150px; font-weight: 500; color: #28a745;">Advanced</span>
+              </div>
+              <div style="display: flex; align-items: center; margin-bottom: 12px;">
+                <span style="min-width: 150px; font-weight: bold; color: #333;">Django REST Framework</span>
+                <span style="margin-left: 130px; font-weight: 500; color: #28a745;">Proficient</span>
+              </div>
+              <div style="display: flex; align-items: center; margin-bottom: 12px;">
+                <span style="min-width: 150px; font-weight: bold; color: #333;">Node.js</span>
+                <span style="margin-left: 150px; font-weight: 500; color: #ffc107;">Intermediate</span>
+              </div>
+              <div style="display: flex; align-items: center; margin-bottom: 12px;">
+                <span style="min-width: 150px; font-weight: bold; color: #333;">RESTful API Design</span>
+                <span style="margin-left: 150px; font-weight: 500; color: #28a745;">Advanced</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- ✅ this closes second row -->
+  </div>
+</section>
 
     <!-- end of service section -->
 <!-- Resume Section -->
